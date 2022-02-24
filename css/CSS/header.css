@@ -1,0 +1,255 @@
+.body{
+    margin: 0;
+}
+/* Start Header */
+.header{
+    background: #f0f0f0;
+    border: 1px solid #CCC;
+    margin: 0px auto;
+    position: relative;
+    height: 660px;
+}
+/* Start menu */
+.menu{
+    height: 50px;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+}
+
+.box .menu .Rectangle {
+    display: flex;
+    width: 100%;
+    z-index: 10;
+    background: rgb(0,0,0,0.5);
+    height: 100%;
+    text-align: center;
+
+}
+
+/* Animation for logo */
+
+.box .menu .Rectangle .logo {
+    list-style: none;
+    position: absolute;
+    height: 100%;
+    width: 200px;
+    /* Box for content */
+    /* background: #111845a6; */
+    position:absolute;
+    border:0px solid ;
+    text-align:center;
+
+  
+
+}
+
+/* Animation for box inside of logo - left*/
+.logo::before{
+    content: '';
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background: rgba(255,255,255,0.1);
+    transition:0.5s;
+    pointer-events: none;
+}
+
+.logo:hover:before{
+    left:19%;
+    transform: skewX(-10deg);
+}
+
+
+.box .menu .Rectangle .logo li{
+    color:white;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    z-index: 4;
+    position: absolute;
+    text-align: center; 
+}
+
+
+
+.box .menu .Rectangle .feature{
+    display: flex;
+    list-style: none;
+    margin-left: 300px;
+    margin-right: auto;
+    cursor: pointer;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.box .menu .Rectangle .feature a{
+    color: rgba(243, 237, 238, 0.8);
+    font-size: 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    padding: 12px 20px;
+    transition: 0.4s;
+}
+
+.box .menu .Rectangle .feature  a:hover {
+    margin: -5px;
+    color: rgb(243, 237, 238);
+    font-family: "Pacifico";
+    font-size: 20px;
+} 
+
+.box .menu .Rectangle .Login{
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    margin-right: 60px;
+    cursor: pointer;
+    /* For menu login */
+    position: relative;
+}
+
+.box .menu .Rectangle .Login li{
+    color:rgba(243, 237, 238, 0.8);
+    font-size: 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    padding: 12px 20px;
+    transition: 0.5s;
+}
+
+.box .menu .Rectangle .Login a, 
+.Login .col-md-12 a{
+    color:rgba(243, 237, 238, 0.8);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 13px 15px;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.Login .menuLogin{
+    display: block;
+    height: 250px;
+    width: 300px;
+    background: rgb(0,0,0,0.8);
+    margin-top: 51px;
+    margin-left: 622px;
+    opacity: 0.8;
+    /* opacity: 0.8;  */
+    transition-duration: 0.5s;
+    /* visibility: hidden; */
+    transition: all 0.5s ease;
+}
+
+
+
+.Login .menuLogin .modal-header p{
+    margin: 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    width: 100%;
+    height: 32px;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .Login .menuLogin form{
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 0;
+    padding-top: 10px;
+} */
+.Login .menuLogin form.form-control{
+    display: block;
+}
+
+.Login .menuLogin input#email, input#Password{
+    width: 250px;
+    height: 30px;
+    padding: 0 15px;
+    color: rgb(243, 237, 238);
+    font-size: 16px;
+    font-weight: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    border-bottom:5px solid rgb(243, 237, 238);    
+    cursor:pointer;
+    border-top-color:transparent;
+	border-left-color:transparent;
+	border-right-color:transparent;
+    margin:0 auto ;
+    outline: none;
+    display: block;
+}
+.Login .menuLogin input#email:focus,input#email:hover,input#Password:focus,input#Password:hover{
+    color:#fff;
+	border-bottom:5px solid #50dfdb;
+}
+
+.Login .menuLogin input.LoginButtom{
+    width: 250px;
+    /* margin: 30px; */
+    /* padding: 0 15px; */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 30px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: normal;
+    color: #fff;
+    background-color:#3970b0;
+    border-color: transparent;
+	font-family: 'Raleway', sans-serif;
+	transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+	-ms-transition:all 0.5s ease-in-out;
+	cursor:pointer;
+}
+
+.Login .menuLogin input.LoginButtom:hover{
+    color: #fff;
+    background-color:#3970b0;
+}
+
+
+.box .menu .Rectangle .Login li:hover{
+    color:rgb(243, 237, 238);
+    padding: 9px ;
+    font-family: "Pacifico";
+    font-size: 20px;
+}
+
+.box .menu .Rectangle .Login a:hover{
+    color:rgb(243, 237, 238);
+    padding: 9px ;
+    font-family: "Pacifico";
+    font-size: 20px;
+}
+
+/* End menu */
+
+.box .DiscoverPicture{
+    height: 660px;
+    width: 100%;
+}
+
+
+.modal-dialog{
+    opacity: 1;
+}

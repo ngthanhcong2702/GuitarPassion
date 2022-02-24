@@ -1,0 +1,164 @@
+body {
+    background: radial-gradient(#444, #161516);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+  
+.Footer {
+    max-width: 700px;
+    height: 660px;
+    margin: 3em auto 0;
+    text-align: center;
+    display: inline;
+    padding-top: 50px;
+}
+  
+.Footer h1 {
+    margin: 1em 0;
+    color: #fff;
+    padding-top: 50px;
+}
+
+  
+
+  
+.Footer  .illustration {
+    position: relative;
+    align-self: end;
+    margin: auto;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    z-index: 100;
+}
+  
+.Footer .boy,
+.Footer .scenery,
+.Footer .background-items,
+.Footer .foreground-items {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 99;
+}
+  
+.Footer .scenery {
+    transition: all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+  
+.Footer .background-items {
+    transition: all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 100ms;
+    top: 23px;
+}
+  
+.Footer .foreground-items {
+    transition: all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 200ms;
+    bottom: 20px;
+}
+  
+.Footer  .home-body .foreground-items {
+    margin-left: -60px;
+}
+  
+.Footer .outdoor-person .foreground-items {
+    margin-right: -80px;
+  }
+  
+.Footer  .boy {
+    bottom: 25px;
+    margin-right: -65px;
+    z-index: 100;
+  }
+  
+.Footer  .person-type > div {
+    transform: scale(0);
+    opacity: 0;
+  }
+  
+.Footer  .person-type.active > div {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+.Footer  .option-wrapper {
+    display: flex;
+    margin: 3em auto;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+    padding: 5px;
+    max-width: 300px;
+    font-size: 12px;
+    line-height: 1.2;
+}
+.Footer  .option-wrapper .option {
+    transition: all 200ms ease;
+    padding: 10px 10px 8px;
+    width: 50%;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+}
+.Footer  .option-wrapper .option.active {
+    background: #fff;
+    color: #333;
+    pointer-events: none;
+}
+
+  
+.Footer .boxFooter{
+    width: 1200px;
+    height: 100px;
+    border-top: 2px solid #f0efec;
+    border-bottom: 2px solid #f0efec;
+    border-left: 2px solid #f0efec;
+    border-right: 2px solid #f0efec;
+    text-align: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+} 
+
+.Footer .boxFooter .Interested{
+    padding: 15px 15px 0;
+    width: 50%;
+    float: center;
+}
+
+.Footer .boxFooter .Interested h5, p, .ContractInfo h5{
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+
+.Footer .boxFooter .ContractInfo{
+    width: 50%;
+    float: center;
+    padding: 15px 15px 0;
+}
+
+input#email{
+    width: 400px;
+    color: rgb(243, 237, 238);
+    font-size: 17px;
+    font-weight: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    border-bottom:5px solid rgb(243, 237, 238);    
+    cursor:pointer;
+    border-top-color:transparent;
+	border-left-color:transparent;
+	border-right-color:transparent;
+    margin:0 auto 20px;
+    outline: none;
+    display: block;
+
+}
+
+input#email:focus,input#email:focus{
+    color:#fff;
+	border-bottom:5px solid #3970b0;
+}
+
+  

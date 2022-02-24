@@ -1,0 +1,193 @@
+body{
+    margin: 0;
+    background-color: #1d1e22;
+}
+
+/* @media only screen and (min-width: 1200px){
+    .register{
+        max-width: 1140px;
+    }
+} */
+
+.register{
+    height: 660px;
+    display: flex;
+}
+/* Start Left */
+.register .left{
+    
+    float: left;
+    width: 60%;
+}
+
+.register .left ul{
+    position: fixed;
+}
+
+.register .left img{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 0%;
+}
+
+.register .left li{
+    color: rgb(243, 237, 238);
+    z-index: 2;
+    list-style: none;
+    text-decoration: none;
+    position: fixed;
+}
+
+.register .left .Top{
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.register .left .Meaning{
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 250px;
+    line-height: 73px;
+    margin-left: 28px;
+}
+
+.register .left .MeaningBottom{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 390px;
+    margin-left: 80px;
+}
+
+/* End Left */
+
+/* Start Right */
+.register .right{
+    float: right;
+    width: 40%;
+}
+/* Start Form */
+.register .right .Form{
+    width: 100%;
+    height: 50%;
+    padding: 100px 0 0;
+}
+
+.register .right .Form .form-control{
+    display: flex;
+}
+
+input#firstName,input#email,input#Password,input#ConfirmPassword{
+    width: 300px;
+    height: 40px;
+    padding: 0 15px;
+    color: rgb(243, 237, 238);
+    font-size: 17px;
+    font-weight: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    border-bottom:5px solid rgb(243, 237, 238);    
+    cursor:pointer;
+    border-top-color:transparent;
+	border-left-color:transparent;
+	border-right-color:transparent;
+    margin:0 auto 20px;
+    outline: none;
+    display: block;
+
+}
+
+input#firstName:focus,input#firstName:hover,input#email:focus,input#email:focus,input#email:hover,input#Password:focus,input#ConfirmPassword:focus,input#Password:hover,input#ConfirmPassword:hover{
+    color:#fff;
+	border-bottom:5px solid #3970b0;
+}
+
+input.registerButtom{
+    width: 300px;
+    margin: 30px auto;
+    padding: 0 15px;
+    display: block;
+    height: 40px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: normal;
+    color: #fff;
+    background-color:#3970b0;
+    border-color: transparent;
+	font-family: 'Raleway', sans-serif;
+	transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+	-ms-transition:all 0.5s ease-in-out;
+	cursor:pointer;
+}
+
+input.registerButtom:hover{
+    color: #fff;
+    background-color:#3970b0;
+}
+
+.register .right  p{
+    font-size: 20px;
+    font-weight: normal;
+    height: 10%;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 40px;
+}
+
+ul.favourite{
+    text-align: center;
+    margin-top: -53px;
+    margin-right: 61px;
+
+}
+
+ul.favourite li{
+    list-style: none;
+    display: inline-block;     
+    padding-left: 10px;
+
+}
+
+ul.favourite li a i.fab{
+    width:40px;
+	height:40px;
+	border:3px solid #fff;
+	text-align:center;
+	line-height:40px;
+    color:#fff;
+    padding: auto;
+
+}
+
+ul.favourite li a i.fab.fa-facebook-f:hover{
+    background-color:#3b5998;
+	color:#fff;
+	border-color:#3b5998;
+}
+
+ul.favourite li a i.fab.fa-twitter:hover{
+    background-color:#1da1f2;
+	color:#fff;
+	border-color:#1da1f2;
+}
+
+
+ul.favourite li a i.fab:hover {
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
+    -o-animation: spin 2s linear infinite;
+    -ms-animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+/* End Form */
+
+
